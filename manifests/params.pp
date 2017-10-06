@@ -24,7 +24,7 @@ class haproxy::params {
         'user'    => 'haproxy',
         'group'   => 'haproxy',
         'daemon'  => '',
-        'stats'   => 'socket /var/lib/haproxy/stats',
+        'stats'   => 'socket /var/lib/haproxy/stats mode 666 level user'
       }
       $defaults_options  = {
         'log'     => 'global',
